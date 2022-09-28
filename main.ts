@@ -14,5 +14,5 @@ basic.forever(function () {
     kitronik_servo_lite.driveForwards(x)
     kitronik_servo_lite.turnLeft(y)
     y += 5
-    y += 2
+    x += 10
 })
