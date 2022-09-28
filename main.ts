@@ -15,4 +15,18 @@ basic.forever(function () {
     kitronik_servo_lite.turnLeft(y)
     y += 5
     x += 10
+    if (x >= 60) {
+        x = 10
+    }
+    if (y >= 100) {
+        y = 10
+    }
+})
+basic.forever(function () {
+    basic.showIcon(IconNames.Happy)
+    basic.pause(5000)
+    basic.showString("" + (x))
+    basic.pause(2000)
+    basic.showString("" + (y))
+    basic.pause(2000)
 })
